@@ -24,7 +24,8 @@ export const MdStyles = css`
   h6 {
     font-weight: bold;
     line-height: 1.5;
-    margin: 1em 0;
+    margin: 0;
+    margin-bottom: 0.5em;
   }
   h1 {
     font-size: 1.8em;

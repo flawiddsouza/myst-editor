@@ -46,10 +46,10 @@ const EditorParent = styled.div`
 `;
 
 const MystWrapper = styled.div`
-  padding: 20px;
+  padding: 0;
   display: flex;
   box-sizing: border-box;
-  height: calc(100% - 60px);
+  height: 100%;
   width: 100%;
   position: relative;
   background-color: white;
