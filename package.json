@@ -1,8 +1,10 @@
 {
-  "name": "myst-editor",
-  "private": true,
-  "version": "0.0.0",
+  "name": "@flawiddsouza/myst-editor",
+  "version": "0.0.1",
   "type": "module",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -12,7 +14,8 @@
     "check-format": "prettier --check src tests bin package.json vite.config.js .eslintrc.cjs",
     "lint": "eslint --ext js,jsx .",
     "format": "prettier --write src tests bin package.json vite.config.js .eslintrc.cjs",
-    "test": "PW_TEST_HTML_REPORT_OPEN=never playwright test -c tests/playwright.config.js --reporter html"
+    "test": "PW_TEST_HTML_REPORT_OPEN=never playwright test -c tests/playwright.config.js --reporter html",
+    "prepublishOnly": "npm run build"
   },
   "prettier": {
     "printWidth": 150
